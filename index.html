@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Fashion Shopping for Mens and Womens</title>
+    <link rel="stylesheet" href="./public/css/index.css">
+    <link rel="stylesheet" href="./public/css/productcard.css">
+    <link rel="stylesheet" href="./public/css/mens-clothing.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body id="body">
+    <!-- TOP SECTION START -->
+    <section class="top_section">
+        <div class="top_banner">
+            <div class="top_inner_banner">
+                <ul>
+                    <li>Offers</li>
+                    <li>Fanbook</li>
+                    <li> <ion-icon name="phone-portrait-outline"></ion-icon> Download App</li>
+                    <li>Tribe Membership</li>
+                </ul>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Track Order</li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="inner_navbar">
+                <div class="left_side">
+                    <div onclick="OpenSidebar()" class="Sidebar_toggle_btn">
+                        <ion-icon name="list-outline"></ion-icon>
+                    </div>
+                    <div class="logo_container">
+                        <a href="/index.html">
+                            <img src="./public/assets/Images/logo-pc.svg" alt="">
+                        </a>
+                    </div>
+                    <ul>
+                        <li><a href="/live_now.html">LIVE NOW</a></li>
+                        <li><a href="/accessories.html">ACCESSORIES</a></li>
+                        <li><a href="./offers.html">OFFERS</a></li>
+                    </ul>
+                </div>
+                <div class="right_side">
+                    <div class="search_box">
+                        <ion-icon name="search-outline"></ion-icon>
+                        <input type="text" placeholder="Search by product , category or collection">
+                    </div>
+                    <ul>
+                        <li class="login_btn"><a href="./login.html">Login</a></li>
+                        <ion-icon class="search_icon_mobile" name="search-outline"></ion-icon>
+                        <li><ion-icon name="heart-outline"></ion-icon></li>
+                        <li><a href="./bag.html"><ion-icon name="bag-outline"></ion-icon></a></li>
+                        <li>
+                            <div onclick="openSelctCountryPopup()" class="flag_container">
+                                <img src="https://images.bewakoof.com/web/india-flag-round-1639566913.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="category_bar">
+            <div class="inner_category_bar">
+                <p><a href="./live_now.html">Live_now</a></p>
+                <p><a href="./men-clothing.html">men</a></p>
+                <p><a href="./women-clothing.html">women</a></p>
+                <p><a href="./accessories.html">winterware</a></p>
+                <p><a href="./accessories.html">Accessories</a></p>
+                <p>heavy_duty</p>
+                <p>bewakoof_air</p>
+                <p>Official_Mearch</p>
+                <p>Plus_size</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="country_popup" class="select_country_popup_container">
+        <div id="country_popup" class="contry_popup">
+            <div class="header">
+                <p>Select Country</p>
+                <ion-icon onclick="closeSelctCountryPopup()" name="close-outline"></ion-icon>
+            </div>
+            <div class="grid_flag_container">
+                <div class="flag_card">
+                    <img src="https://images.bewakoof.com/web/india-flag-round-1639566913.png" alt="">
+                    <p>INDIA</p>
+                </div>
+                <div class="flag_card">
+                    <img src="https://images.bewakoof.com/web/uae-flag-round-1639566914.png" alt="">
+                    <p>UAE</p>
+                </div>
+                <div class="flag_card">
+                    <img src="https://images.bewakoof.com/web/usa-flag-round.png" alt="">
+                    <p>USA</p>
+                </div>
+                <div class="flag_card">
+                    <img src="https://images.bewakoof.com/web/canada-flag-round.png" alt="">
+                    <p>CANADA</p>
+                </div>
+                <div class="flag_card">
+                    <img src="https://images.bewakoof.com/web/thailand-flag-round.png" alt="">
+                    <p>THAILAND</p>
+                </div>
+                <div class="flag_card">
+                    <img src="https://images.bewakoof.com/web/malaysia-flag-round.png" alt="">
+                    <p>MALESIA</p>
+                </div>
+                <div class="flag_card">
+                    <img src="https://images.bewakoof.com/web/austrialia-flag-round.png" alt="">
+                    <p>AUSTALIA</p>
+                </div>
+                <div class="flag_card">
+                    <img src="https://images.bewakoof.com/web/oman-flag-round.png" alt="">
+                    <p>OMEN</p>
+                </div>
+                <div class="flag_card">
+                    <img src="https://images.bewakoof.com/web/qatar-flag-round.png" alt="">
+                    <p>QUATAR</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SIDEBAR START -->
+    <div class="sidebar" id="sidebar">
+        <div class="content">
+            <div class="welcome_section">
+                <p class="heading">Welcome Guest</p>
+                <p>Login / Sign Up</p>
+            </div>
+            <div>
+                <p>SHOP IN</p>
+                <div class="sidbar_list">
+                    <p>Men</p>
+                    <p>Women</p>
+                    <p>Designs of the Week</p>
+                    <p>Mobile Covers</p>
+                </div>
+            </div>
+            <div class="contact_us">
+                <p>CONTACT US</p>
+                <div class="sidbar_list">
+                    <p>Help & Support</p>
+                    <p>Feedback & Suggestions</p>
+                    <p>Become a Seller</p>
+                </div>
+            </div>
+            <div class="about_us">
+                <p>ABOUT US</p>
+                <div class="sidbar_list">
+                    <p>Our Story</p>
+                    <p>Fanbook</p>
+                    <p>Blog a Seller</p>
+                    <p>Login</p>
+                </div>
+            </div>
+        </div>
+        <div class="space" onclick="CloseSidebar()">
+        </div>
+    </div>
+
+
+    <div class="slider_container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper_image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/NEW-1x1-Joggers-1699357840.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/Sale-1x1-Banner-Buy-3-at-1199-1699265959.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/ik-1x1-new--1--1699607681.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/MAD-Diwali-sale-Common-Ends-tomm-1x1-banner-1699620837.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/NEW-1x1-OversizedSweatshirts-common-1699594711.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+
+    <!-- subCategory_slider  -->
+    <div class="subCategory_slider">
+        <div class="subCategory_slider_inner_container">
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://images.bewakoof.com/uploads/grid/app/category-icon-for-Desktop--1--1697613232.jpg"
+                        alt="">
+                </div>
+                <p>New Arrivels</p>
+            </div>
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://images.bewakoof.com/uploads/grid/app/category-icon-for-msite-Desktop-1697613234.jpg"
+                        alt="">
+                </div>
+                <p>Bestsellers</p>
+            </div>
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://images.bewakoof.com/uploads/grid/app/category-icon-for-Desktop-Winterwear-1698217139.jpg"
+                        alt="">
+                </div>
+                <p>Winterwear</p>
+            </div>
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://images.bewakoof.com/uploads/grid/app/category-icon-for-Desktop---1--1697613231.jpg"
+                        alt="">
+                </div>
+                <p>Official Collaborations</p>
+            </div>
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://images.bewakoof.com/uploads/grid/app/thumbnails-Revamp-Customization--1--1693212866.jpg"
+                        alt="">
+                </div>
+                <p>Customization</p>
+            </div>
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://images.bewakoof.com/uploads/grid/app/thumbnails-Revamp-Combos-1693212865.gif"
+                        alt="">
+                </div>
+                <p>Combos</p>
+            </div>
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://images.bewakoof.com/uploads/grid/app/thumbnails-Revamp-Vote-1693212866.jpg"
+                        alt="">
+                </div>
+                <p>Vote For Designs</p>
+            </div>
+            <div class="card">
+                <div class="image_container">
+                    <img src="https://images.bewakoof.com/uploads/grid/app/last-size-new-thumbnaik-1668508337.jpg"
+                        alt="">
+                </div>
+                <p>Last Size Left</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About us Banner-1 -->
+    <div class="banner_container">
+        <img src="https://images.bewakoof.com/uploads/grid/app/brand-strip-1683780891-1684740361.gif" alt="">
+    </div>
+
+
+    <!-- designs_of_week_section start -->
+    <div class="designs_of_week_section">
+        <h3 class="divider">Designs of the Week</h3>
+        <div class="flex_banner_container">
+            <img src="https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Men--6--1699353023.jpg"
+                alt="">
+            <img src="https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Women--7--1699353024.jpg"
+                alt="">
+        </div>
+        <div class="banner_container" style="margin-top: 0px;">
+            <img src="https://images.bewakoof.com/uploads/grid/app/Flat-65---off-Blockbuster-deal-desktop-1699359103.jpg"
+                alt="">
+        </div>
+    </div>
+
+    <!-- Trending categories section start -->
+    <div class="trending_categories">
+        <h3 class="divider">TRENDING CATEGORIES</h3>
+        <div class="mainCategory_slider">
+            <div class="mainCategory_slider_inner_container">
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-printed-tees-m-1685445850.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-oversized-tees-m-1685086219.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-shorts-1686063035.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-joggers-m-1684997505.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-vests-1686063036.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-fullsleeve-1686063034.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainCategory_slider">
+            <div class="mainCategory_slider_inner_container">
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-printed-tees-w-1685445851.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-Oversized-tshirts-Women-1682055634.png"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-fashion-tops-1686305660.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-Joggers-Women-1682055633.png"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-WOMEN-Dresses-1681725004.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-WOMEN-BoyfriendTeess-1681730084.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bewakoof Originals section start -->
+    <div class="bewakoof_originals">
+        <h3 class="divider">Bewakoof Originals</h3>
+    </div>
+    <div class="slider_container">
+        <div class="swiper swiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper_image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/Banner-PC-Size-480x457-American-PIMA-1699249579.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/Banner-PC-Size-480x457-1699249580.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/Banner-PC-Size-480x457-Heavy-Duty-1699249579.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/Banner-PC-Size-480x457-American-PIMA-1699249579.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/Banner-PC-Size-480x457-1699249580.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/Banner-PC-Size-480x457-Heavy-Duty-1699249579.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+
+    <!-- TOO HOT TO BE MISSED setction start -->
+    <div class="to_hot_section">
+        <h3 class="divider">TOO HOT TO BE MISSED</h3>
+        <div class="flex_banner_container">
+            <img src="https://images.bewakoof.com/uploads/grid/app/720x420-Midsize-bannner-Combos-1699277122.jpg"
+                alt="">
+            <img src="https://images.bewakoof.com/uploads/grid/app/Midsize-banner-720x420-1699355906.jpg"
+                alt="">
+        </div>
+        <div class="flex_banner_container">
+            <img src="https://images.bewakoof.com/uploads/grid/app/Customise-Desktop-midsize-Banner-1699360277.jpg"
+                alt="">
+            <img src="https://images.bewakoof.com/uploads/grid/app/Plus-Size-Desktop-midsize-Banner--1--1699360278.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- CATEGORIES TO BAG section start -->
+    <div class="categories_to_bag_section">
+        <h3 class="divider">CATEGORIES TO BAG</h3>
+        <div class="mainCategory_slider">
+            <div class="mainCategory_slider_inner_container">
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-sshirts-1686063036.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-boxers-1685086219.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box--m-pyjama-1685086220.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-women-cords-1686063032.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-women-pjs-1686063033.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-women-shorts-1686063034.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider_container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper_image_container">
+                            <img src="https://images.bewakoof.com/uploads/grid/app/1x1-static-oct-ComfyPj-common-1699626865.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper_image_container">
+                            <img src="https://images.bewakoof.com/uploads/grid/app/1x1-Banner-Parachute-pants-1699360279.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper_image_container">
+                            <img src="https://images.bewakoof.com/uploads/grid/app/ik-1x1-new--1--1699607681.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper_image_container">
+                            <img src="https://images.bewakoof.com/uploads/grid/app/NEW-1x1-cargo-common-1699627063.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper_image_container">
+                            <img src="https://images.bewakoof.com/uploads/grid/app/NEW-1x1-GPOT-Common-1699421463.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- .TOP ACCESSORIES section star -->
+    <div class="top_accessories_section">
+        <h3 class="divider">TOP ACCESSORIES</h3>
+        <div class="mainCategory_slider">
+            <div class="mainCategory_slider_inner_container">
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/360x524-accessories-categorybox-Mobile-covers-1694760545.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/360x524-accessories-categorybox-Sliders-1694760546.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/360x524-accessories-categorybox-Backpacks-1694760544.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/360x524-accessories-categorybox-Caps-1694760545.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <!-- BESTSELLERS section start -->
+    <div class="bestsellers_section">
+        <h3 class="divider">BESTSELLERS</h3>
+        <div class="products_grid_container">
+            <div class="product_card">
+                <div class="img_container">
+                    <img src="https://images.bewakoof.com/t640/men-s-white-t-shirt-1093-1672982318-1.jpg" alt="">
+                </div>
+                <div class="info_container">
+                    <p class="brand">Bewakoof X Dc</p>
+                    <p class="name">Joker Cards Full Sleeve T-shirts (BML)</p>
+                    <p class="price">₹399 <span>₹599</span></p>
+                    <p class="info">₹369 For TriBe Members</p>
+                    <p class="bottom_tag">100% COTTON</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <div class="img_container">
+                    <img src="https://images.bewakoof.com/t640/men-s-green-cyber-samurai-graphic-printed-t-shirt-589374-1699536346-1.jpg" alt="">
+                </div>
+                <div class="info_container">
+                    <p class="brand">Bewakoof</p>
+                    <p class="name">Mens Green Cyber Samurai Graphic Printed T-shirt</p>
+                    <p class="price">₹499 <span>₹1499</span></p>
+                    <p class="info">₹459 For TriBe Members</p>
+                    <p class="bottom_tag">100% COTTON</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <div class="img_container">
+                    <img src="https://images.bewakoof.com/t640/men-s-grey-garfield-hates-mornings-graphic-printed-oversized-t-shirt-624553-1699536292-1.jpg" alt="">
+                </div>
+                <div class="info_container">
+                    <p class="brand">Bewakoof X Garfield</p>
+                    <p class="name">Mens Gray Garfield Hates Morning Graphic Pri..</p>
+                    <p class="price">₹699 <span>₹1499</span></p>
+                    <p class="info">₹639 For TriBe Members</p>
+                    <p class="bottom_tag">100% COTTON</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <div class="img_container">
+                    <img src="https://images.bewakoof.com/t640/men-s-blue-ramen-lover-graphic-printed-oversized-t-shirt-624559-1699536357-1.jpg" alt="">
+                </div>
+                <div class="info_container">
+                    <p class="brand">Bewakoof X Naruto</p>
+                    <p class="name">Mens Bule Ramen Lover Graphic Printed Over..</p>
+                    <p class="price">₹699 <span>₹1599</span></p>
+                    <p class="info">₹639 For TriBe Members</p>
+                    <p class="bottom_tag">100% COTTON</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <div class="img_container">
+                    <img src="https://images.bewakoof.com/t640/men-s-pink-ricklaxation-graphic-printed-oversized-hoodies-624551-1699536351-1.jpg" alt="">
+                </div>
+                <div class="info_container">
+                    <p class="brand">Bewakoof X Rick And Morty</p>
+                    <p class="name">Mens Pink Ricklaxation Graphic Printed Oversized Hoodies</p>
+                    <p class="price">₹1199 <span>₹2999</span></p>
+                    <p class="info">₹1119 For TriBe Members</p>
+                    <p class="bottom_tag">COMFORT FLEECE FABRIC</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- OUR BEST PICKS sectin start -->
+    <div class="best_picks_section">
+        <h3 class="divider">OUR BEST PICKS</h3>
+        <div class="flex_banner_container">
+            <img src="https://images.bewakoof.com/uploads/grid/app/Sweaters-desktop-mid-size-banner-Common-1699357756.jpg"
+                alt="">
+            <img src="https://images.bewakoof.com/uploads/grid/app/desktop-mid-size-banner--Conflicted-copy-from-Abhira-s-MacBook-Pro-on-2023-11-07-10-46-25---1--1699359133.jpg"
+                alt="">
+        </div>
+        <div class="flex_banner_container">
+            <img src="https://images.bewakoof.com/uploads/grid/app/Midsize-Desktop-Banner-B1G1-FREE-1699265102.jpg"
+                alt="">
+            <img src="https://images.bewakoof.com/uploads/grid/app/desktop-mid-size-banner-FS-1698990405.jpg" alt="">
+        </div>
+        <div class="banner_container" style="margin-top: 5px;">
+            <img src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-3-1672040129.jpg" alt="">
+        </div>
+        <div class="banner_container" style="margin-top: 5px;">
+            <img src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-3-1669022420.jpg" alt="">
+        </div>
+    </div>
+
+
+    <!-- FOOTER START -->
+    <div class="footer">
+        <div style="margin-top: 50px;" class="main_nav">
+            <div class="footer_section">
+                <p class="tittle">Customer service</p>
+                <div>
+                    <p>Contact Us</p>
+                    <p>Track Order</p>
+                    <p>Return Order</p>
+                    <p>Cancel Order</p>
+                </div>
+            </div>
+            <div class="footer_section">
+                <p class="tittle">Company</p>
+                <div>
+                    <p>About Us</p>
+                    <p>We are Hiring</p>
+                    <p>Terms & Conditions</p>
+                    <p>Privancy & Policy</p>
+                    <p>Blog</p>
+                </div>
+            </div>
+            <div class="footer_section">
+                <p class="tittle">Connect With Us</p>
+                <div>
+                    <p><ion-icon name="logo-facebook"></ion-icon> 4.7M People Like This</p>
+                    <p><ion-icon name="logo-instagram"></ion-icon> 1M Followers</p>
+                    <p class="social_media_section">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                        <ion-icon name="logo-snapchat"></ion-icon>
+                        <ion-icon name="logo-apple"></ion-icon>
+                    </p>
+                </div>
+            </div>
+            <div class="footer_section">
+                <p class="tittle">Keep Up To Date</p>
+                <div class="search-box">
+                    <input type="text" placeholder="Enter Email Id">
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 50px;" class="main_nav">
+            <div class="footer_section">
+                <div>
+                    <p><ion-icon name="storefront-outline"></ion-icon> 15 Days return Policy</p>
+                    <p><ion-icon name="cash-outline"></ion-icon> Cash on Delivery</p>
+                </div>
+            </div>
+            <div class="footer_section">
+                <p class="tittle">Download the app</p>
+                <div style="flex-direction: row; align-items: center;">
+                    <img src="https://images.bewakoof.com/web/app_android_v1.png" alt="">
+                    <img src="https://images.bewakoof.com/web/app_ios_v1.png" alt="">
+                </div>
+            </div>
+            <div class="footer_section">
+                <p class="tittle">100% secure payments</p>
+                <div>
+                    <img src="https://images.bewakoof.com/web/secure-payments-image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./public/js/index.js"></script>
+</html>

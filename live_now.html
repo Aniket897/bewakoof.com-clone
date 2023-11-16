@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/index.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./public/css/live-now.css">
+</head>
+
+<body>
+    <!-- top section -->
+    <section class="top_section">
+        <div class="top_banner">
+            <div class="top_inner_banner">
+                <ul>
+                    <li>Offers</li>
+                    <li>Fanbook</li>
+                    <li> <ion-icon name="phone-portrait-outline"></ion-icon> Download App</li>
+                    <li>Tribe Membership</li>
+                </ul>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Track Order</li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="inner_navbar">
+                <div class="left_side">
+                    <div onclick="OpenSidebar()" class="Sidebar_toggle_btn">
+                        <ion-icon name="list-outline"></ion-icon>
+                    </div>
+                    <div class="logo_container">
+                        <a href="/index.html">
+                            <img src="./public/assets/Images/logo-pc.svg" alt="">
+                        </a>
+                    </div>
+                    <ul>
+                        <li><a href="/live_now.html">LIVE NOW</a></li>
+                        <li><a href="/accessories.html">ACCESSORIES</a></li>
+                        <li><a href="./offers.html">OFFERS</a></li>
+                    </ul>
+                </div>
+                <div class="right_side">
+                    <div class="search_box">
+                        <ion-icon name="search-outline"></ion-icon>
+                        <input type="text" placeholder="Search by product , category or collection">
+                    </div>
+                    <ul>
+                        <li class="login_btn"><a href="./login.html">Login</a></li>
+                        <ion-icon class="search_icon_mobile" name="search-outline"></ion-icon>
+                        <li><ion-icon name="heart-outline"></ion-icon></li>
+                        <li><a href="./bag.html"><ion-icon name="bag-outline"></ion-icon></a></li>
+                        <li>
+                            <div onclick="openSelctCountryPopup()" class="flag_container">
+                                <img src="https://images.bewakoof.com/web/india-flag-round-1639566913.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="banner_container" style="margin-top: 0px;">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-01-1699542609.jpg" alt="">
+    </div>
+
+    <div class="banner_container">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-02-1699542610.jpg" alt="">
+    </div>
+
+    <div class="flex_banner_container">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-03-1699542610.jpg" alt="">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-04-1699542611.jpg" alt="">
+    </div>
+    <div class="flex_banner_container">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-05-1699542611.jpg" alt="">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-06-1699542611.jpg" alt="">
+    </div>
+
+    <!-- Ishans Fav -->
+
+    <div class="banner_container" style="margin-top: 0px;">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-07-1699591963.jpg" alt="">
+    </div>
+
+
+    <div class="ishans_fav">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-08-1699591964.jpg" alt="">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-09-1699591964.jpg" alt="">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-10-1699591965.jpg" alt="">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-11-1699591965.jpg" alt="">
+    </div>
+
+
+    <div class="ishans_fav">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-12-1699591966.jpg" alt="">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-13-1699599230.jpg" alt="">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-14-1699599230.jpg" alt="">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-15-1699599230.jpg" alt="">
+    </div>
+
+    <!-- Hottest Trends -->
+
+
+    <div class="banner_container" style="margin-top: 0px;">
+        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-desktop-slice-16-1699599231.jpg"
+            alt="">
+    </div>
+
+    <div class="hottest_trend">
+        <div class="mainCategory_slider">
+            <div class="mainCategory_slider_inner_container">
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-msite-Slice-17-1699528552-1699599572.webp"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-msite-Slice-18-1699528552-1699599572.webp"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-msite-Slice-19-1699528553-1699599571.webp"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-msite-Slice-20-1699528553.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-msite-Slice-21-1699528553.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image_container">
+                        <img src="https://images.bewakoof.com/uploads/grid/app/IshanKhatter-Landing-msite-Slice-22-1699528554.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER START -->
+    <div class="footer">
+        <div style="margin-top: 50px;" class="main_nav">
+            <div class="footer_section">
+                <p class="tittle">Customer service</p>
+                <div>
+                    <p>Contact Us</p>
+                    <p>Track Order</p>
+                    <p>Return Order</p>
+                    <p>Cancel Order</p>
+                </div>
+            </div>
+            <div class="footer_section">
+                <p class="tittle">Company</p>
+                <div>
+                    <p>About Us</p>
+                    <p>We are Hiring</p>
+                    <p>Terms & Conditions</p>
+                    <p>Privancy & Policy</p>
+                    <p>Blog</p>
+                </div>
+            </div>
+            <div class="footer_section">
+                <p class="tittle">Connect With Us</p>
+                <div>
+                    <p><ion-icon name="logo-facebook"></ion-icon> 4.7M People Like This</p>
+                    <p><ion-icon name="logo-instagram"></ion-icon> 1M Followers</p>
+                    <p class="social_media_section">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                        <ion-icon name="logo-snapchat"></ion-icon>
+                        <ion-icon name="logo-apple"></ion-icon>
+                    </p>
+                </div>
+            </div>
+            <div class="footer_section">
+                <p class="tittle">Keep Up To Date</p>
+                <div class="search-box">
+                    <input type="text" placeholder="Enter Email Id">
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 50px;" class="main_nav">
+            <div class="footer_section">
+                <div>
+                    <p><ion-icon name="storefront-outline"></ion-icon> 15 Days return Policy</p>
+                    <p><ion-icon name="cash-outline"></ion-icon> Cash on Delivery</p>
+                </div>
+            </div>
+            <div class="footer_section">
+                <p class="tittle">Download the app</p>
+                <div style="flex-direction: row; align-items: center;">
+                    <img src="https://images.bewakoof.com/web/app_android_v1.png" alt="">
+                    <img src="https://images.bewakoof.com/web/app_ios_v1.png" alt="">
+                </div>
+            </div>
+            <div class="footer_section">
+                <p class="tittle">100% secure payments</p>
+                <div>
+                    <img src="https://images.bewakoof.com/web/secure-payments-image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

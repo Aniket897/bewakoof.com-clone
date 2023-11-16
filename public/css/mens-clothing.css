@@ -1,0 +1,57 @@
+.mens_clothing_top_section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.mens_clothing_top_section div {
+    width: 80%;
+}
+
+.mens_clothing_top_section .path {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font: bold;
+}
+
+
+.main_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.products_grid_container {
+    width: 90%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+@media(max-width : 1285px) {
+    .products_grid_container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media(max-width : 1019px) {
+    .products_grid_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+@media(max-width : 691px) {
+    .products_grid_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

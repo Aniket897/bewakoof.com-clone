@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./public/css/index.css">
+    <link rel="stylesheet" href="./public/css/login.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- top section -->
+    <section class="top_section">
+        <div class="top_banner">
+            <div class="top_inner_banner">
+                <ul>
+                    <li>Offers</li>
+                    <li>Fanbook</li>
+                    <li> <ion-icon name="phone-portrait-outline"></ion-icon> Download App</li>
+                    <li>Tribe Membership</li>
+                </ul>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Track Order</li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="inner_navbar">
+                <div class="left_side">
+                    <div onclick="OpenSidebar()" class="Sidebar_toggle_btn">
+                        <ion-icon name="list-outline"></ion-icon>
+                    </div>
+                    <div class="logo_container">
+                        <a href="/index.html">
+                            <img src="./public/assets/Images/logo-pc.svg" alt="">
+                        </a>
+                    </div>
+                    <ul>
+                        <li><a href="/live_now.html">LIVE NOW</a></li>
+                        <li><a href="/accessories.html">ACCESSORIES</a></li>
+                        <li><a href="./offers.html">OFFERS</a></li>
+                    </ul>
+                </div>
+                <div class="right_side">
+                    <div class="search_box">
+                        <ion-icon name="search-outline"></ion-icon>
+                        <input type="text" placeholder="Search by product , category or collection">
+                    </div>
+                    <ul>
+                        <li class="login_btn"><a href="./login.html">Login</a></li>
+                        <ion-icon class="search_icon_mobile" name="search-outline"></ion-icon>
+                        <li><ion-icon name="heart-outline"></ion-icon></li>
+                        <li><a href="./bag.html"><ion-icon name="bag-outline"></ion-icon></a></li>
+                        <li>
+                            <div onclick="openSelctCountryPopup()" class="flag_container">
+                                <img src="https://images.bewakoof.com/web/india-flag-round-1639566913.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Main Container -->
+
+    <div class="main_container">
+        <div class="image_container">
+            <h2>Welcome to the world of Bewakoof®!</h2>
+            <img src="https://images.bewakoof.com/web/group-19-1617704502.png" alt="">
+        </div>
+        <div class="form_container">
+            <div class="form_top_section">
+                <h2>Login / Sign Up</h2>
+                <p class="tagline">for Latest trends, exciting offers and everything Bewakoof®!</p>
+            </div>
+            <div class="input_box">
+                <!-- <ion-icon name="phone-portrait-outline"></ion-icon> -->
+                <input type="text" placeholder="Enter Mobile Number">
+            </div>
+            <button class="btn-1">CONTINUE</button>
+            <div class="line_divider">
+                <div class="line"></div>
+                <p>OR</p>
+                <div class="line"></div>
+            </div>
+            <div class="bottom_btn_container">
+                <button class="email_btn"><ion-icon name="mail-outline"></ion-icon> Continue With Email</button>
+                <div class="flex_btn_container">
+                    <button> <ion-icon name="logo-google"></ion-icon> GOOGLE</button>
+                    <button><ion-icon name="logo-facebook"></ion-icon> FACEBOOK</button>
+                </div>
+            </div>
+            <p class="tagline_footer">By creating an account or logging in, you agree with Bewakoof®'s <span>Terms and
+                    Conditions</span> and <span>Privacy Policy.</span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

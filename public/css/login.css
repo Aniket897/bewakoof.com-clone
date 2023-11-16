@@ -1,0 +1,192 @@
+.main_container {
+    display: flex;
+    align-items: center;
+}
+
+.image_container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    width: 50%;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 80vh;
+}
+
+.form_container h2 {
+    margin-top: 50px;
+}
+
+.form_container .tagline {
+    font-weight: bold;
+    color: gray;
+}
+
+
+.form_container .input_box {
+    border: 1px solid gray;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 60px;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.form_container input {
+    padding: 20px;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form_container .btn-1 {
+    height: 60px;
+    width: 63%;
+    background-color: #42A2A2;
+    padding: 10px;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form_container .line_divider {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.form_top_section {
+    text-align: center;
+}
+
+.form_container .line_divider .line {
+    width: 45%;
+    height: 1px;
+    background-color: gray;
+}
+
+.bottom_btn_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form_container .bottom_btn_container button {
+    padding: 10px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid gray;
+    color: gray;
+    text-transform: uppercase;
+
+}
+
+.form_container .email_btn {
+    width: 55%;
+    font-size: 20px;
+}
+
+
+.flex_btn_container {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+}
+
+.flex_btn_container button {
+    width: 50%;
+}
+
+
+.tagline_footer {
+    width: 65%;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+
+.tagline_footer span {
+    color: #48A8AE;
+    cursor: pointer;
+}
+
+
+
+
+@media(max-width : 1139px){
+    .main_container {
+        flex-direction: column-reverse;
+    }
+    .form_container {
+        width: 90%;
+    }
+    .tagline_footer {
+        width: 90%;
+    }
+    .flex_btn_container {
+        width: 90%;
+        flex-direction: column;
+    }
+    .flex_btn_container button {
+        width: 100%;
+    }
+    .form_container .email_btn {
+        width: 90%;
+    }
+    .form_container .line_divider  {
+        width: 90%;
+    }
+    .form_container .btn-1 {
+        width: 94%;
+    }
+    .form_container .input_box {
+        width: 90%;
+    }
+    .image_container {
+        display: none;
+    }
+    .input_box {
+        display: flex;
+        align-items: center;
+    }
+    .input_box ion-icon {
+        font-size: 20px;
+    }
+    .form_container {
+        height: max-content;
+    }
+}

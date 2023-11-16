@@ -1,0 +1,11 @@
+.ishans_fav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -4px;
+}
+
+
+.ishans_fav img {
+    width: 25vw;
+}
